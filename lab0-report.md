@@ -122,15 +122,12 @@ Git 是现代软件开发的基础设施。它记录了文件的每一次修改�
 
 ## 四、实验截图
 
-> 以下截图请替换为你自己的实际截图，并放到仓库中（例如 `screenshots/` 目录）。
+- 截图 1：在 main 分支合并 feature 分支时出现冲突（`git merge feature` 输出 `CONFLICT (content): Merge conflict in main.c`，`cat main.c` 显示两个分支对同一行 `printf` 的冲突标记）
 
-- 截图 1：SSH 配置成功验证
-  ![SSH验证](screenshots/ssh-verify.png)
-- 截图 2：克隆仓库成功
-  ![克隆仓库](screenshots/clone.png)
-- 截图 3：merge 出现冲突
   ![合并冲突](screenshots/merge-conflict.png)
-- 截图 4：解决冲突后的提交历史（git log --oneline --graph）
+
+- 截图 2：解决冲突并完成合并（用 nano 删除冲突标记、保留期望内容，`git commit -m "merge: resolve conflict"` 提交，`git log --oneline --graph` 显示合并提交历史）
+
   ![提交历史](screenshots/git-log.png)
 
 ## 五、建议
